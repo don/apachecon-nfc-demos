@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "res/xml/config.xml": {
+            "/widget": {
+                "<feature name=\"NfcPlugin\"><param name=\"android-package\" value=\"com.chariotsolutions.nfc.plugin.NfcPlugin\" /><param name=\"onload\" value=\"true\" /></feature>": 1
+            },
+            "/*": {
+                "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>": 1
+            }
+        },
+        "AndroidManifest.xml": {
+            "/manifest": {
+                "<uses-permission android:name=\"android.permission.NFC\" />": 1,
+                "<uses-feature android:name=\"android.hardware.nfc\" android:required=\"false\" />": 1
+            },
+            "/*": {
+                "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.chariotsolutions.nfc.plugin": {
+            "PACKAGE_NAME": "com.example.nfc.handover"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.example.nfc.handover"
+        }
+    },
+    "dependent_plugins": {}
+}
