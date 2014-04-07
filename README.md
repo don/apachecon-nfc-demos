@@ -1,0 +1,1 @@
+Sample code for ApacheCon presentation [Writing NFC Apps with Apache Cordova](https://don.github.io/slides/2014-04-07-apachecon-nfc)
